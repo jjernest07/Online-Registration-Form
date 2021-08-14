@@ -1,0 +1,233 @@
+/* ================================= 
+  Global Styles
+==================================== */
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+
+/* ================================= 
+  Base Element Styles
+==================================== */
+
+body {
+  font-family: 'Merriweather', serif;
+  max-width: 95%;
+  margin: auto;
+}
+
+form {
+  margin: 10px auto;
+}
+
+h1,
+h2,  
+p {
+  text-align: center;
+}
+
+h1 {
+  background-color: black;
+  color: white;
+  font-size: 1.3em;
+  padding: 30px 0;
+  margin-top: -11.792px;
+  margin-bottom: 25px;
+}
+
+h2 {
+  font-size: 1.2em;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+p {
+  color: #D6D6D6;
+  padding: 0 10px 20px 10px;
+  margin-top: 2px;
+  font-size: .8em;
+}
+
+/* ================================= 
+  Base Layout Styles
+==================================== */
+
+input[type="text"],
+input[type="email"],
+input[type="phone"],
+input[type="address"],
+input[type="city"],
+input[type="state"],
+input[type="zip"],
+textarea,
+select {
+  padding-top: 20px;
+  padding-bottom: 15px;
+  padding-left: 10px;
+  height: auto;
+  margin: 10px 0;
+  border: none;
+  width: 100%;
+  background-color: #EAEAEA;
+  border-radius: 5px;
+  font-size: .8em;
+  font-family: Merriweather;
+  
+}
+
+input::placeholder {
+  text-align: right;
+  font-style: italic;
+  font-family: Merriweather;  
+  font-size: .8em;
+  padding-right: 5px;
+}
+
+.zip {
+  width: 200px;
+}
+
+label {
+  padding-top: 25px;
+  margin-bottom: 8px;
+  font-size: .9em;
+}
+
+label.light {
+  display: inline;
+  padding: 5px;
+}
+
+#fullname:focus, 
+#email:focus,
+#phone:focus,
+#address:focus,
+#city:focus,
+#state:focus,
+#zip:focus,
+textarea:focus {
+    background-color: lightgray;
+}
+
+button {
+  width: 100%;
+  padding: 20px;
+  margin-top: 30px;
+  font-size: 20px;
+  font-family: 'Merriweather', serif;
+  background-color: green;
+  color: white;
+  border-radius: 5px;
+}
+
+fieldset {
+  margin-bottom: 30px;
+  border: none;
+
+}
+
+legend {
+  font-size: 1.4em;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+textarea {
+  overflow: auto;
+  padding: 45px;
+  margin-top: 5px;
+}
+
+footer {
+  text-align: center;
+  font-size: .9em;
+  margin-bottom: 10px;
+}
+
+hr.dline1 {
+  border: 2px double black;
+  margin-bottom: -5px;
+}
+
+hr.dline2 {
+  border: 1px double black;
+}
+
+hr.sline {
+  border: 1px solid black;
+}
+
+#placeholder {
+  text-align: left;
+  font-style: italic;
+  font-family: Merriweather;  
+  font-size: .9em;
+  padding-left: 5px;
+}
+
+
+
+/* ================================= 
+  Media Queries
+==================================== */
+
+@media (min-width: 768px) {
+  .name,
+  .email,
+  .phone,
+  .address,
+  .city,
+  .state {
+    display: flex;
+    justify-content: space-between;
+    
+    margin: 10px auto;
+    width: 700px;
+  }
+  
+  #fullname,
+  #email,
+  #phone,
+  #address,
+  #city,
+  #state {
+    width: 500px;
+  }
+  
+  .zip {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px auto;
+    width: 700px;
+  }
+
+  #zip {
+    width: 200px;
+    margin-right: 300px;
+    
+  }
+
+  .dline1,
+  .dline2,
+  .sline    {
+    width: 700px;
+    
+  }
+  
+ .subwrapper,
+ .subtopic {
+   width: 700px;
+   margin: auto;
+ }
+
+ #button {
+   margin-bottom: 30px;
+ }
+
+
+}
