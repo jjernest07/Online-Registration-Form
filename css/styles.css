@@ -89,7 +89,7 @@ input::placeholder {
 }
 
 .zip {
-  width: 200px;
+  width: 50%;
 }
 
 label {
@@ -207,8 +207,8 @@ hr.sline {
   }
 
   #zip {
-    width: 200px;
-    margin-right: 300px;
+    width: 125px;
+    margin-right: 375px;
     
   }
 
